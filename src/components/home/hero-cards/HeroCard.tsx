@@ -8,7 +8,7 @@ import {
 	DialogOverlay,
 	DialogTrigger,
 } from "@/components/ui/dialog";
-import { X } from "lucide-react";
+import { Play, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const HeroCard = ({ imgHref, ytHref, title }: iYTCard) => {
@@ -17,13 +17,16 @@ export const HeroCard = ({ imgHref, ytHref, title }: iYTCard) => {
 			<div className="h-[300[px]] w-[300px]">
 				<Dialog>
 					<DialogTrigger asChild>
-						<Image
-							src={imgHref}
-							alt="demo image"
-							width={500}
-							height={500}
-							className="rounded-lg"
-						/>
+						<div className="group hover:brightness-50 transition duration-300 ease-in-out hover:cursor-pointer relative">
+							<Image
+								src={imgHref}
+								alt="demo image"
+								width={500}
+								height={500}
+								className="rounded-lg"
+							/>
+							<Play className="hidden group-hover:block absolute top-1/2 left-1/2 h-10 w-10 text-black fill-black transform -translate-x-1/2 -translate-y-1/2" />
+						</div>
 					</DialogTrigger>
 					<DialogOverlay className="flex items-center justify-center">
 						<div className="w-full md:w-[500px]">
