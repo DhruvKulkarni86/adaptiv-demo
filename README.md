@@ -6,7 +6,7 @@ A single page NextJS application created using TailwindCSS, shadcn/ui, drizzle O
 
 -   `git clone`
 -   `cd` into root directory
--   `pnpm add`
+-   `pnpm install`
 -   `pnpm run db:generate` to generate initial migrations
 -   `pnpm run db:migrate` to complete initial migration
 -   `pnpm dev` to start local dev server
