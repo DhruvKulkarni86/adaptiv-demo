@@ -8,3 +8,9 @@ export interface iFooterSocials {
 	link: string;
 	icon: React.ReactNode;
 }
+
+export interface iYTCard {
+	title: string;
+	ytHref: string;
+	imgHref: string;
+}
